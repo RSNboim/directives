@@ -1,0 +1,13 @@
+<app-c1 > </app-c1>
+<app-results></app-results>
+<br>
+<br>
+<br>
+<button appShowcase clickCountColor="red" (clickCountChange)="logArr.push ($event)">click 1</button>
+<button appShowcase  clickCountColor="green" (clickCountChange)="logArr.push ($event)">click 2</button>
+<button appShowcase clickCountColor="lime" (clickCountChange)="logArr.push ($event)">click 3</button>
+<button appShowcase clickCountColor="tomato"(clickCountChange)="logArr.push ($event)">click 4</button>
+
+<ul>
+  <li  *ngFor="let l of logArr">{{l}}</li>
+</ul>
